@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  font-family: Georgia, serif;
+  color: #3e2723;
+  line-height: 1.6;
+}
+ 
+header {
+  background-color: #4e342e;
+  color: #fff8e1;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+header h1 {
+  font-size: 26px;
+}
+ 
+header nav a {
+  color: #fff8e1;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 15px;
+}
+ 
+header nav a:hover {
+  text-decoration: underline;
+}
+ 
+section:first-of-type {
+  background-color: #fff8e1;
+  text-align: center;
+  padding: 60px 20px;
+}
+ 
+section:first-of-type h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+ 
+section:first-of-type p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+ 
+table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+ 
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+ 
+thead {
+  background-color: #4e342e;
+  color: #fff8e1;
+}
+ 
+tbody tr:nth-child(even) {
+  background-color: #f5ebe0;
+}
+ 
+section#hours {
+  text-align: center;
+  padding: 40px 20px;
+}
+ 
+section#hours ul {
+  list-style: none;
+}
+ 
+section#hours li {
+  margin-bottom: 8px;
+}
+ 
+section#gallery {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff8e1;
+}
+ 
+section#gallery img {
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+ 
+footer {
+  background-color: #3e2723;
+  color: #fff8e1;
+  text-align: center;
+  padding: 30px 20px;
+}
+ 
+footer a {
+  color: #ffd54f;
+} 
+/* ===== زر العودة لأعلى الصفحة ===== */
+#backToTopButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4e342e;
+  color: #fff8e1;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+/* حالة الظهور */
+#backToTopButton.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===== نموذج النشرة البريدية ===== */
+#newsletterForm {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#newsletterForm input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+#newsletterForm button {
+  background-color: #ffd54f;
+  color: #3e2723;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== رسالة النشرة البريدية ===== */
+#newsletterMessage {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
